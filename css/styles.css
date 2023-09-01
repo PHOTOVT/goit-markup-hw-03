@@ -18,6 +18,11 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+}
+
 ul, ol {
     list-style-type: none;
 }
@@ -32,13 +37,22 @@ img {
 
 .container {
     width: 1158px;
-    margin: 0, auto;
+    margin: 0 auto;
     padding: 0 15px;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
 }
 
 .nav {
     display: flex;
     align-items: center;
+}
+
+.nav-logo {
+    margin-right: 76px;
 }
 
 .nav-logo, .nav-logo-footer {
@@ -69,7 +83,8 @@ img {
     font-weight: 500;
     line-height: 150%; 
     letter-spacing: 0.32px;
-    padding: 24px, 0;
+    padding: 24px 0;
+    display: block;
 }
 
 .menu-link:hover, .menu-link:focus {
@@ -78,6 +93,12 @@ img {
 
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.address-menu {
+    display: flex;
+    gap: 40px;
 }
 
 .menu-contacts {
@@ -96,9 +117,9 @@ img {
 
 .order {
     background-color: var(--color-navy);
-    padding: 188px, 0;
     width: 1440px;
     height: 600px;
+    padding: 188px 0;
     flex-shrink: 0;
 }
 
@@ -132,6 +153,19 @@ img {
 
 .advantages {
     padding: 120px 0;
+}
+
+.hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .advantages-list {
@@ -190,7 +224,8 @@ img {
     margin-bottom: 72px;
 }
 
-.team-memebers-list {
+.team-members-list {
+    display: flex;
     gap: 24px;
 }
 
@@ -201,7 +236,6 @@ img {
     justify-content: center;
     align-items: center;
     width: calc((100% - 72px) / 4); 
-    /* width: 264px; */
     background-color: var(--color-white);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
@@ -237,9 +271,9 @@ img {
 }
 
 .example-description {
-    padding: 32px, 16px;
-    /* border: 1px solid var(--color--cornflower);
-    border-top: none; */
+    padding: 32px 16px;
+    border: 1px solid var(--color--cornflower);
+    border-top: none;
 }
 
 .example-name {
@@ -248,7 +282,7 @@ img {
 
 .footer {
     background-color: var(--color-navy);
-    padding: 100px, 0;
+    padding: 100px 0;
     width: 1440px;
     height: 312px;
     flex-shrink: 0;
