@@ -1,0 +1,149 @@
+:root {
+    --color-navy: #2E2F42;
+    --color-white: #FFFFFF;
+    --color--cornflower: #E7E9FC;
+    --color-cloud: #F4F4FD; 
+    --color-iris: #4D5AE5;
+    --color-slate: #434455;
+    --color-ocean: #404BBF;
+}
+
+body {
+    color: var(--color-slate);
+    background-color: var(--color-white);
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+.nav-logo {
+    color: var(--color-iris);
+}
+
+.logo-studio-header {
+    color: var(--color-navy);
+}
+
+.nav-logo, .logo-studio-header, .logo-studio-footer {
+    font-family: Raleway, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17; 
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: var(--color-navy);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%; 
+    letter-spacing: 0.32px;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: var(--color-ocean);
+} 
+
+.address {
+    font-style: normal;
+}
+
+.address-contacts {
+    color: var(--color-slate);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.32px;
+}
+
+.address-contacts:hover, .address-contacts:focus {
+    color: var(--color-ocean);
+} 
+
+.order {
+    background-color: var(--color-navy);
+}
+
+.first-title {
+    color: var(--color-white);
+    text-align: center;
+    letter-spacing: 1.12px;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 107.143%
+}
+
+.order-button {
+    color: var(--color-white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.64px;
+    background-color: var(--color-iris);
+    cursor: pointer;
+}
+
+.order-button:hover, .order-button:focus {
+    background-color: var(--color-ocean);
+}
+
+.third-title {
+    color: var(--color-navy);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.text {
+    color: var(--color-slate);
+}
+
+.text, .text-footer {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.team {
+    background-color: var(--color-cloud);
+}
+
+.second-title {
+    color: var(--color-navy);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 111.111%;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.team-member {
+    background-color: var(--color-white);
+}
+
+.portfolio-example {
+    border: 1px solid var(--color--cornflower);
+}
+
+.footer {
+    background-color: var(--color-navy);
+}
+
+.logo-studio-footer {
+    color: var(--color-cloud);
+}
+
+.text-footer {
+    color: var(--color-cloud);
+}
