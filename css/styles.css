@@ -22,7 +22,26 @@ ul, ol {
     list-style-type: none;
 }
 
-.nav-logo {
+img {
+    display: block;
+}
+
+.header {
+    border-bottom: 1px solid var(--color--cornflower);
+}
+
+.container {
+    width: 1158px;
+    margin: 0, auto;
+    padding: 0 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo, .nav-logo-footer {
     color: var(--color-iris);
 }
 
@@ -30,7 +49,7 @@ ul, ol {
     color: var(--color-navy);
 }
 
-.nav-logo, .logo-studio-header, .logo-studio-footer {
+.nav-logo, .nav-logo-footer, .logo-studio-header, .logo-studio-footer {
     font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 700;
@@ -39,15 +58,21 @@ ul, ol {
     text-transform: uppercase;
 }
 
-.nav-link {
+.menu {
+    display: flex;
+    gap: 40px;
+}
+
+.menu-link {
     color: var(--color-navy);
     font-size: 16px;
     font-weight: 500;
     line-height: 150%; 
     letter-spacing: 0.32px;
+    padding: 24px, 0;
 }
 
-.nav-link:hover, .nav-link:focus {
+.menu-link:hover, .menu-link:focus {
     color: var(--color-ocean);
 } 
 
@@ -55,7 +80,7 @@ ul, ol {
     font-style: normal;
 }
 
-.address-contacts {
+.menu-contacts {
     color: var(--color-slate);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -65,21 +90,25 @@ ul, ol {
     letter-spacing: 0.32px;
 }
 
-.address-contacts:hover, .address-contacts:focus {
+.menu-contacts:hover, .address-menu:focus {
     color: var(--color-ocean);
 } 
 
 .order {
     background-color: var(--color-navy);
+    padding: 188px, 0;
+    width: 1440px;
+    height: 600px;
+    flex-shrink: 0;
 }
 
 .first-title {
     color: var(--color-white);
     text-align: center;
-    letter-spacing: 1.12px;
     font-size: 56px;
-    font-weight: 700;
-    line-height: 107.143%
+    line-height: 107.143%;
+    letter-spacing: 1.12px;
+    max-width: 496px;
 }
 
 .order-button {
@@ -90,10 +119,31 @@ ul, ol {
     letter-spacing: 0.64px;
     background-color: var(--color-iris);
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .order-button:hover, .order-button:focus {
     background-color: var(--color-ocean);
+}
+
+.advantages {
+    padding: 120px 0;
+}
+
+.advantages-list {
+    display: flex;
+    flex-shrink: 0;
+    gap: 24px;
+}
+
+.advantages-list-item {
+    width: calc((100% - 72px) / 4);
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .third-title {
@@ -102,6 +152,16 @@ ul, ol {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.member-name {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.member-position {
+    text-align: center;
 }
 
 .text {
@@ -116,6 +176,7 @@ ul, ol {
 
 .team {
     background-color: var(--color-cloud);
+    padding: 120px 0;
 }
 
 .second-title {
@@ -126,18 +187,76 @@ ul, ol {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
+    margin-bottom: 72px;
+}
+
+.team-memebers-list {
+    gap: 24px;
 }
 
 .team-member {
+    display: inline-flex;
+    padding-bottom: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 72px) / 4); 
+    /* width: 264px; */
     background-color: var(--color-white);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+
+}
+
+.member-description {
+    padding: 32px 0;
+}
+
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.portfolio-examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-example {
     border: 1px solid var(--color--cornflower);
+    width: calc((100% - 48px) / 3);
+    display: flex;
+    /* width: 360px; */
+    height: 420px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.example-description {
+    padding: 32px, 16px;
+    /* border: 1px solid var(--color--cornflower);
+    border-top: none; */
+}
+
+.example-name {
+    margin-bottom: 8px;
 }
 
 .footer {
     background-color: var(--color-navy);
+    padding: 100px, 0;
+    width: 1440px;
+    height: 312px;
+    flex-shrink: 0;
+}
+
+.nav-logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-studio-footer {
@@ -146,4 +265,5 @@ ul, ol {
 
 .text-footer {
     color: var(--color-cloud);
+    max-width: 264px;
 }
