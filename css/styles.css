@@ -18,13 +18,15 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, p {
-    padding: 0;
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
+
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 img {
@@ -46,13 +48,21 @@ img {
     align-items: center;
 }
 
+.header .container {
+    display: flex;
+    padding: 0 15px;
+    align-items: center;
+}
+
 .nav {
     display: flex;
     align-items: center;
+    margin-right: 332px;
 }
 
 .nav-logo {
     margin-right: 76px;
+    display: block;
 }
 
 .nav-logo, .nav-logo-footer {
@@ -99,6 +109,7 @@ img {
 .address-menu {
     display: flex;
     gap: 40px;
+    margin: 0;
 }
 
 .menu-contacts {
@@ -175,7 +186,7 @@ img {
 }
 
 .advantages-list-item {
-    width: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
     flex-direction: column;
     align-items: flex-start;
 }
@@ -230,7 +241,7 @@ img {
 }
 
 .team-member {
-    width: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
