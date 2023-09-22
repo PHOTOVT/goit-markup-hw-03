@@ -31,6 +31,8 @@ ul, ol {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .header {
@@ -108,11 +110,12 @@ img {
 .address-menu {
     display: flex;
     gap: 40px;
-    margin: 0;
+    /* margin: 0; */
 }
 
 .menu-contacts {
     color: var(--color-slate);
+    padding: 24px 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     font-size: 16px;
@@ -135,6 +138,7 @@ img {
 
 .first-title {
     color: var(--color-white);
+    margin: 0 auto 48px;
     text-align: center;
     font-size: 56px;
     line-height: 107.143%;
@@ -144,6 +148,7 @@ img {
 
 .order-button {
     color: var(--color-white);
+    margin: 0 auto;
     font-size: 16px;
     font-weight: 500;
     line-height: 150%;
@@ -190,34 +195,6 @@ img {
     align-items: flex-start;
 }
 
-.third-title {
-    color: var(--color-navy);
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-}
-
-.member-name {
-    text-align: center;
-    margin-bottom: 8px;
-}
-
-.member-position {
-    text-align: center;
-}
-
-.text {
-    color: var(--color-slate);
-}
-
-.text, .text-footer {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-}
-
 .team {
     background-color: var(--color-cloud);
     padding: 120px 0;
@@ -244,7 +221,7 @@ img {
     display: inline-flex;
     padding-bottom: 0px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     background-color: var(--color-white);
     border-radius: 0px 0px 4px 4px;
@@ -252,7 +229,35 @@ img {
 }
 
 .member-description {
-    padding: 32px 0;
+    padding: 32px 16px; /* 0px instead of 16px */
+}
+
+.third-title {
+    color: var(--color-navy);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+}
+
+.text {
+    color: var(--color-slate);
+}
+
+.text, .text-footer {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.member-name {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.member-position {
+    text-align: center;
 }
 
 .portfolio {
@@ -270,9 +275,9 @@ img {
 .portfolio-example {
     width: calc((100% - 48px) / 3);
     border: 1px solid var(--color--cornflower);
-    display: flex;
     height: 420px;
     padding-bottom: 0px;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-shrink: 0;
@@ -280,7 +285,6 @@ img {
 
 .example-description {
     padding: 32px 16px;
-    border: 1px solid var(--color--cornflower);
     border-top: none;
 }
 
@@ -306,6 +310,6 @@ img {
 }
 
 .text-footer {
-    color: var(--color-cloud);
-    max-width: 264px;
+    color: var(--color-cloud); 
+    max-width: 264px; 
 }
